@@ -8,5 +8,6 @@ Run the following commands:
 
 Inside the campus-spots/ folder:
 ```
+npm install
 npx expo start
 ```
