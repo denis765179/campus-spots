@@ -12,6 +12,11 @@ export default function Index() {
           My favourite place in Lisbon is the Rivieira beach because I like beaches.
         </Text>
       </View>
+      <View style = {styles.squareContainer}>
+        <View style = {styles.squares}/>
+        <View style = {[styles.squares, {flex: 1}]}/>
+        <View style = {styles.squares}/>
+      </View>
     </View>
   );
 }
@@ -43,4 +48,15 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: 10,
   },
+  squares: {
+    width: 60,
+    height: 60,
+    backgroundColor: 'blue',
+  },
+  squareContainer: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    width: '100%',
+    gap: 8,
+  }
 });
